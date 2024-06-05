@@ -84,21 +84,4 @@ public class Main {
                             System.out.println("Amount Invested: " + inv.getAmountInvested());
                             System.out.println("Current Value: " + inv.getCurrentValue());
                             System.out.println();
-                        });
-                        break;
-                    case 4:
-                        reportService.generateReport();
-                        break;
-                    case 5:
-                        System.out.println("Exiting...");
-                        scanner.close();
-                        System.exit(0);
-                    default:
-                        System.out.println("Invalid choice. Please try again.");
-                }
-            }
-        } else {
-            System.out.println("Login failed!");
-        }
-    }
-}
+                       
