@@ -3,11 +3,17 @@ package com.portfolio;
 import com.portfolio.auth.AuthenticationService;
 import com.portfolio.investment.*;
 import com.portfolio.report.ReportService;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Scanner;
 
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+
+        // Command-line interface logic for user interactions
         Scanner scanner = new Scanner(System.in);
         AuthenticationService authService = new AuthenticationService();
 
