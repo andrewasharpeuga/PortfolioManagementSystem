@@ -1,21 +1,40 @@
-package com.portfolio.investment;
+package com.yourpackage;
 
-public abstract class Investment {
+import java.math.BigDecimal;
+
+public class Investment {
     private String name;
-    private double amountInvested;
-    
-    public Investment(String name, double amountInvested) {
+    private int quantity;
+    private BigDecimal purchasePrice;
+
+    public Investment(String name, int quantity, BigDecimal purchasePrice) {
         this.name = name;
-        this.amountInvested = amountInvested;
+        this.quantity = quantity;
+        this.purchasePrice = purchasePrice;
     }
-    
+
+    // Getters and setters
     public String getName() {
         return name;
     }
-    
-    public double getAmountInvested() {
-        return amountInvested;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    
-    public abstract double getCurrentValue();
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public BigDecimal getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public void setPurchasePrice(BigDecimal purchasePrice) {
+        this.purchasePrice = purchasePrice;
+    }
 }
