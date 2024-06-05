@@ -1,0 +1,23 @@
+package com.portfolio.report;
+
+import com.portfolio.investment.InvestmentService;
+
+public class ReportService {
+    private InvestmentService investmentService;
+    
+    public ReportService(InvestmentService investmentService) {
+        this.investmentService = investmentService;
+    }
+    
+    public void generateReport() {
+        System.out.println("Investment Portfolio Report");
+        System.out.println("----------------------------");
+        investmentService.getInvestments().forEach(investment -> {
+            System.out.println("Name: " + investment.getName());
+            System.out.println("Amount Invested: " + investment.getAmountInvested());
+            System.out.println("Current Value: " + investment.getCurrentValue());
+            System.out.println();
+        });
+        System.out.println("Total Portfolio Value: " + investmentService.getTotalCurrentValue());
+    }
+}
