@@ -1,7 +1,7 @@
 #  Portfolio Management System
 
 ## Project Overview
-This project involves creating a Financial Portfolio Management System. The application will allow users to manage their investments in various financial instruments like stocks, bonds, and mutual funds. The system will provide functionalities for adding, updating, and removing investments, as well as generating reports to show the overall performance of the portfolio.
+This project lets users manage their various investments like stocks, bonds, and mutual funds. The system provides functionalities for adding, updating, and removing investments, as well as generating reports to show the overall performance of the portfolio.
 
 ## Features
 User Authentication: Secure login system for users.
