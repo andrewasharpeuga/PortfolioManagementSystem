@@ -6,26 +6,40 @@ This project involves creating a Financial Portfolio Management System. The appl
 ## Features
 User Authentication: Secure login system for users.
 Portfolio Management:
-Add, update, and delete investments.
-View portfolio summary.
+1. Add, update, and delete investments.
+2. View portfolio summary.
+
 Investment Types:
-Stocks
-Bonds
-Mutual Funds
+1. Stocks
+2. Bonds
+3. Mutual Funds
+
 Reporting:
 Generate reports showing the current value of the portfolio.
+
 Display historical performance.urpackage.Main
+
 Follow the on-screen instructions to manage your portfolio.
 
 ## Example Usage
+
+
 Adding an Investment:
 
 Login to the system.
+
 Select the option to Add Investment.
+
 Choose the type of investment (e.g., Stock, Bond, Mutual Fund).
+
 Enter the required details (e.g., Name, Quantity, Purchase Price).
+
+
+
 Viewing Portfolio Summary:
 
 Login to the system.
+
 Select the option to View Portfolio Summary.
+
 The system will display the overall performance of your portfolio along with details of each investment.
