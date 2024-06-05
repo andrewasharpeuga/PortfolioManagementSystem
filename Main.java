@@ -10,18 +10,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AuthenticationService authService = new AuthenticationService();
-        
+
         System.out.println("Welcome to Financial Portfolio Management System");
         System.out.print("Enter username: ");
         String username = scanner.nextLine();
         System.out.print("Enter password: ");
         String password = scanner.nextLine();
-        
+
         if (authService.login(username, password)) {
             System.out.println("Login successful!");
             InvestmentService investmentService = new InvestmentService();
             ReportService reportService = new ReportService(investmentService);
-            
+
             while (true) {
                 System.out.println("1. Add Investment");
                 System.out.println("2. Remove Investment");
@@ -31,7 +31,7 @@ public class Main {
                 System.out.print("Choose an option: ");
                 int choice = scanner.nextInt();
                 scanner.nextLine(); // consume newline
-                
+
                 switch (choice) {
                     case 1:
                         System.out.print("Enter investment type (stock/bond/mutualfund): ");
@@ -41,7 +41,7 @@ public class Main {
                         System.out.print("Enter amount invested: ");
                         double amountInvested = scanner.nextDouble();
                         scanner.nextLine(); // consume newline
-                        
+
                         if ("stock".equalsIgnoreCase(type)) {
                             System.out.print("Enter shares: ");
                             int shares = scanner.nextInt();
@@ -84,4 +84,21 @@ public class Main {
                             System.out.println("Amount Invested: " + inv.getAmountInvested());
                             System.out.println("Current Value: " + inv.getCurrentValue());
                             System.out.println();
-                       
+                        });
+                        break;
+                    case 4:
+                        reportService.generateReport();
+                        break;
+                    case 5:
+                        System.out.println("Exiting...");
+                        scanner.close();
+                        System.exit(0);
+                    default:
+                        System.out.println("Invalid choice. Please try again.");
+                }
+            }
+        } else {
+            System.out.println("Login failed!");
+        }
+    }
+}
