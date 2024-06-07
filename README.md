@@ -5,6 +5,7 @@ This project lets users manage their various investments like stocks, bonds, and
 
 ## Features
 User Authentication: Secure login system for users.
+
 Portfolio Management:
 1. Add, update, and delete investments.
 2. View portfolio summary.
