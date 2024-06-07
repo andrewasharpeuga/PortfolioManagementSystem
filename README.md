@@ -18,9 +18,6 @@ Investment Types:
 Reporting:
 Generate reports showing the current value of the portfolio.
 
-Display historical performance.urpackage.Main
-
-Follow the on-screen instructions to manage your portfolio.
 
 ## Example Usage
 
